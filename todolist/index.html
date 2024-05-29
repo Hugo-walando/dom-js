@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="app.js" type="module"></script>
+    </head>
+    <body>
+        <div class="container w-6/12 mx-auto mt-20">
+            <div class="mx-auto flex">
+                <input class="p-2 border w-full input-field"
+                       placeholder="Faire les courses ..." type="text">
+                <button
+                        class="bg-blue-500 rounded-md p-2 pointer text-white add-btn">Ajouter</button>
+            </div>
+            <div class="mt-10">
+                <button
+                        class="border-blue-500 border p-2 rounded-md">Toutes</button>
+                <button class="border-blue-500 border p-2 rounded-md">A
+                    faire</button>
+                <button
+                        class="border-blue-500 border p-2 rounded-md">Faites</button>
+            </div>
+            <div class="p-5 border mt-8 todolist">
+                <div class="flex justify-between m-2">
+                    <div>Faire une todolist en js</div>
+                    <button
+                            class="bg-red-500 px-2 py-1 text-white rounded-md del-btn">P</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
