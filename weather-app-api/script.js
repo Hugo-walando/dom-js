@@ -1,4 +1,4 @@
-import CONFIG from './config';
+import CONFIG from './config.js';
 
 const displayWeather = document.querySelector('#display-weather');
 const displayWeatherInfo = document.querySelector('#display-weather-info');
@@ -8,7 +8,7 @@ const image = document.querySelector('#img');
 const fetchData = () => {
   return new Promise((resolve, reject) => {
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=50.43&lon=2.83&appid=${CONFIG}`,
+      `https://api.openweathermap.org/data/2.5/weather?lat=50.43&lon=2.83&appid=${CONFIG.apiKey}`,
     )
       .then((response) => response.json())
       .then((data) => resolve(data))
