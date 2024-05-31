@@ -1,2 +1,2 @@
-# Ignore le fichier de configuration contenant la clé API
+# Ignore le fichier de configuration contenant la clé API weather-app
 config.js
