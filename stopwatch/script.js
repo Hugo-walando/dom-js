@@ -1,5 +1,7 @@
 let timeDisplay = document.querySelector('#time');
 let startBtn = document.querySelector('#start-btn');
+let stopBtn = document.querySelector('#stop-btn');
+let resetBtn = document.querySelector('#reset-btn');
 let startTime;
 let elapsedTime = 0;
 let timerInterval;
@@ -38,6 +40,16 @@ const updateTimer = () => {
 
   timeDisplay.textContent = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
 };
+
+startBtn.addEventListener('click', (e) => {
+  startTimer();
+});
+stopBtn.addEventListener('click', (e) => {
+  stopTimer();
+});
+resetBtn.addEventListener('click', (e) => {
+  resetTimer();
+});
 
 function pad(number) {
   return number.toString().padStart(2, '0');
